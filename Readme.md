@@ -4,31 +4,29 @@ Fall 2021
 
 ## Phase 1
 
-In this phase we implement an information retrieval system.
+In this phase we implement an information retrieval system for both English and Persian language.
 
 
 ### Data
 
-We use two corpus, one is in English, and one is in Persian.
+Two corpus are used in this phase, one is in English, and one is in Persian. Corpora are located in `phase1-data`. The English texts are from news, and the Persian texts are from Persian Wikipedia.
 
 ### Part 1: Preprocessing
 
-This part include actions to preprocesse the text like "Normalization", "Tokenization", etc.
+This part include actions to preprocesse the text including removing punctuations, normalization, tokenization, stemming, removing stop words, etc.
 
 ### Part 2: Indexing
 
-In this part we create indexes on the preprocessed text.
+In this part, we create indexes on the preprocessed text. Two type of indexing is used: Positional indexing and Bigram indexing.
 Bigram
 
 ### Part 3: Compression
 
-Compression is performed on the indexes.
-Gamma
-Variable code
+In this section, compression is performed on the indexes. Two compression method is implemented, namely Variable Byte compression and Gamma Code compression.
 
-### Part 4: Query correction
+### Part 4: Query Correction
 
-In this part the query is corrected.
+In this part the query is corrected by replacing misspelled words with best alternative. We use jaccard score to find options. The word with minimum edit distance is used to replace the misspelled word.
 
 ## Phase 2
 
